@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çağla Çelik — Android Developer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            color: #1a1a1a;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6C3FD4, #9C6FFF);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
+        header p  { font-size: 1.1rem; opacity: 0.9; }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+
+        .card h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6C3FD4;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background: #f0ebff;
+            color: #6C3FD4;
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .app-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #6C3FD4, #9C6FFF);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+        }
+
+        .app-info h3 { font-size: 1.1rem; margin-bottom: 4px; }
+        .app-info p  { font-size: 0.9rem; color: #666; margin-bottom: 10px; }
+
+        .btn {
+            display: inline-block;
+            background: #6C3FD4;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .btn:hover { background: #5a32b0; }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #444;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .contact-item:hover { color: #6C3FD4; }
+
+        .contact-icon {
+            width: 36px;
+            height: 36px;
+            background: #f0ebff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Çağla Alpaslan</h1>
+    <p>Android Developer &amp; PHP / Laravel Developer</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Hakkımda</h2>
+        <p>
+            Yıldız Teknik Üniversitesi Matematik Mühendisliği(%100 İngilizce) mezunuyum.
+
+			8+ yıllık deneyimimle PHP ve Laravel altyapısında hızlı, güvenli ve ölçeklenebilir e-ticaret sistemleri geliştiriyorum.
+
+			Bunun yanı sıra, Google Play Store’da yer alan Android uygulamalar geliştiriyorum.
+        </p>
+        <div class="tags">
+            <span class="tag">Android</span>
+            <span class="tag">Java</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Laravel</span>
+            <span class="tag">E-Ticaret</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Uygulamalar</h2>
+        <div class="app-card">
+            <div class="app-icon">🔔</div>
+            <div class="app-info">
+                <h3>ReminderAgenda</h3>
+                <p>Hatırlatıcı ve ajanda uygulaması — Google Play'de ücretsiz</p>
+                <a class="btn" href="https://play.google.com/store/apps/dev?id=8438605401045175256&hl=tr" target="_blank">Google Play'de Görüntüle</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>İletişim</h2>
+        <div class="contact-links">
+            <a class="contact-item" href="mailto:reminderagenda.app@gmail.com">
+                <div class="contact-icon">✉️</div>
+                reminderagenda.app@gmail.com
+            </a>
+            <a class="contact-item" href="https://play.google.com/store/apps/dev?id=8438605401045175256&hl=tr" target="_blank">
+                <div class="contact-icon">▶️</div>
+                Google Play Geliştirici Sayfası
+            </a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Çağla Alpaslan Çelik — caglalpaslan.github.io
+</footer>
+
+</body>
+</html>
